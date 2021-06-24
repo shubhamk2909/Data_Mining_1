@@ -1,0 +1,1077 @@
+@relation african_crises-weka.filters.unsupervised.instance.Resample-S1-Z100.0-weka.filters.unsupervised.instance.Resample-S1-Z100.0-weka.filters.unsupervised.instance.Resample-S1-Z100.0-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+
+@attribute case {min_7.9,7.9_14.8,14.8_21.7,21.7_28.6,28.6_35.5,35.5_42.4,42.4_49.3,49.3_56.2,56.2_63.1,63.1_max}
+@attribute cc3 {DZA,AGO,CAF,CIV,EGY,KEN,MUS,MAR,NGA,ZAF,TUN,ZMB,ZWE}
+@attribute country {Algeria,Angola,'Central African Republic','Ivory Coast',Egypt,Kenya,Mauritius,Morocco,Nigeria,'South Africa',Tunisia,Zambia,Zimbabwe}
+@attribute year {min_1877.2,1877.2_1892.4,1892.4_1907.6,1907.6_1922.8,1922.8_1938,1938_1953.2,1953.2_1968.4,1968.4_1983.6,1983.6_1998.8,1998.8_max}
+@attribute systemic_crisis {min_0.1,0.1_0.2,0.2_0.3,0.3_0.4,0.4_0.5,0.5_0.6,0.6_0.7,0.7_0.8,0.8_0.9,0.9_max}
+@attribute exch_usd {min_74.43,74.43_148.86,148.86_223.29,223.29_297.72,297.72_372.15,372.15_446.58,446.58_521.01,521.01_595.44,595.44_669.87,669.87_max}
+@attribute domestic_debt_in_default {min_0.1,0.1_0.2,0.2_0.3,0.3_0.4,0.4_0.5',0.5_0.6,0.6_0.7,0.7_0.8,0.8_0.9,0.9_max}
+@attribute sovereign_external_debt_default {min_0.1,0.1_0.2,0.2_0.3,0.3_0.4,0.4_0.5',0.5_0.6,0.6_0.7,0.7_0.8,0.8_0.9,0.9_max}
+@attribute gdp_weighted_default {min_0.036,0.036_0.072,0.072_0.108,0.108_0.144,0.144_0.18,0.18_0.216,0.216_0.252,0.252_0.288,0.288_0.324,0.324_max}
+@attribute inflation_annual_cpi {min_390.13,390.13_807.45,807.45_1224.77,1224.77_1642.09,1642.09_2059.41,2059.41_2476.73,2476.73_2894.05,2894.05_3311.37,3311.37_3728.69,3728.69_max}
+@attribute independence {min_0.1,0.1_0.2,0.2_0.3,0.3_0.4,0.4_0.5',0.5_0.6,0.6_0.7,0.7_0.8,0.8_0.9,0.9_max}
+@attribute currency_crises {min_0.2,0.2_0.4,0.4_0.6,0.6_0.8,0.8_1,1_1.2,1.2_1.4,1.4_1.6,1.6_1.8,1.8_max}
+@attribute inflation_crises {min_0.1,0.1_0.2,0.2_0.3,0.3_0.4,0.4_0.5',0.5_0.6,0.6_0.7,0.7_0.8,0.8_0.9,0.9_max}
+@attribute banking_crisis {crisis,no_crisis}
+
+@data
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,0.9_max,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,0.9_max,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,297.72_372.15,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,669.87_max,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.216_0.252,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,297.72_372.15,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,669.87_max,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.216_0.252,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,min_0.1,372.15_446.58,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,595.44_669.87,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,0.9_max,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,446.58_521.01,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,669.87_max,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,669.87_max,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1983.6_1998.8,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,1224.77_1642.09,0.9_max,0.8_1,0.9_max,crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,0.9_max,0.9_max,min_0.036,390.13_807.45,0.9_max,0.8_1,0.9_max,crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,0.9_max,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,min_0.1,446.58_521.01,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MUS,Mauritius,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.324_max,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,297.72_372.15,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,669.87_max,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,297.72_372.15,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,AGO,Angola,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,446.58_521.01,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.216_0.252,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+14.8_21.7,EGY,Egypt,1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,AGO,Angola,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,0.9_max,0.036_0.072,min_390.13,0.9_max,1.8_max,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,0.9_max,0.036_0.072,min_390.13,0.9_max,1.8_max,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1983.6_1998.8,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,3728.69_max,0.9_max,0.8_1,0.9_max,crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1983.6_1998.8,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,3728.69_max,0.9_max,0.8_1,0.9_max,crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,DZA,Algeria,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.216_0.252,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1892.4_1907.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,min_0.1,297.72_372.15,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,669.87_max,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,0.9_max,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,1.8_max,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,446.58_521.01,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,446.58_521.01,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,669.87_max,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1983.6_1998.8,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,2476.73_2894.05,0.9_max,1.8_max,0.9_max,crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,min_0.1,446.58_521.01,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.108_0.144,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.216_0.252,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,0.9_max,0.9_max,min_0.036,390.13_807.45,0.9_max,0.8_1,0.9_max,crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+28.6_35.5,KEN,Kenya,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,0.9_max,0.036_0.072,min_390.13,0.9_max,1.8_max,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.324_max,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+49.3_56.2,ZAF,'South Africa',1983.6_1998.8,min_0.1,min_74.43,min_0.1,0.9_max,0.324_max,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+7.9_14.8,CAF,'Central African Republic',1998.8_max,min_0.1,446.58_521.01,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,148.86_223.29,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+63.1_max,ZWE,Zimbabwe,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1953.2_1968.4,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,0.8_1,0.9_max,no_crisis
+42.4_49.3,NGA,Nigeria,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1922.8_1938,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1953.2_1968.4,min_0.1,297.72_372.15,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,595.44_669.87,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1983.6_1998.8,min_0.1,521.01_595.44,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1998.8_max,min_0.1,min_74.43,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1998.8_max,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,0.9_max,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,DZA,Algeria,min_1877.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis
+28.6_35.5,KEN,Kenya,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MAR,Morocco,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,DZA,Algeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+56.2_63.1,TUN,Tunisia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+14.8_21.7,EGY,Egypt,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1877.2_1892.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,223.29_297.72,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,no_crisis
+min_7.9,AGO,Angola,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1998.8_max,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+42.4_49.3,NGA,Nigeria,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,CIV,'Ivory Coast',1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+min_7.9,DZA,Algeria,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1998.8_max,min_0.1,74.43_148.86,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,no_crisis
+63.1_max,ZMB,Zambia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,0.9_max,crisis
+63.1_max,ZMB,Zambia,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+49.3_56.2,ZAF,'South Africa',1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1968.4_1983.6,min_0.1,223.29_297.72,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+35.5_42.4,MAR,Morocco,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,0.9_max,no_crisis
+35.5_42.4,MUS,Mauritius,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,min_0.1,no_crisis
+35.5_42.4,MUS,Mauritius,1938_1953.2,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+63.1_max,ZMB,Zambia,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+min_7.9,AGO,Angola,1983.6_1998.8,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,1224.77_1642.09,0.9_max,0.8_1,0.9_max,crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,0.9_max,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+35.5_42.4,MUS,Mauritius,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1907.6_1922.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+63.1_max,ZWE,Zimbabwe,1953.2_1968.4,min_0.1,min_74.43,0.9_max,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+7.9_14.8,CAF,'Central African Republic',1983.6_1998.8,0.9_max,297.72_372.15,min_0.1,0.9_max,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,crisis
+min_7.9,AGO,Angola,1953.2_1968.4,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,min_0.1,min_0.2,min_0.1,no_crisis
+56.2_63.1,TUN,Tunisia,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+28.6_35.5,KEN,Kenya,1968.4_1983.6,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,min_0.2,min_0.1,no_crisis
+14.8_21.7,EGY,Egypt,1983.6_1998.8,min_0.1,min_74.43,min_0.1,min_0.1,min_0.036,min_390.13,0.9_max,0.8_1,0.9_max,crisis

@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     winter-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.Standardize-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.Standardize-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    5770
+Attributes:   9
+              Year
+              City
+              Sport
+              Discipline
+              Athlete
+              Country
+              Gender
+              Event
+              Medal
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.25 (1442 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 15
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 10
+
+Size of set of large itemsets L(2): 3
+
+Size of set of large itemsets L(3): 1
+
+Best rules found:
+
+ 1. Discipline=Ice Hockey 1536 ==> Sport=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 2. Sport=Ice Hockey 1536 ==> Discipline=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 3. Event=Ice Hockey 1536 ==> Sport=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 4. Sport=Ice Hockey 1536 ==> Event=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 5. Event=Ice Hockey 1536 ==> Discipline=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 6. Discipline=Ice Hockey 1536 ==> Event=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 7. Discipline=Ice Hockey Event=Ice Hockey 1536 ==> Sport=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 8. Sport=Ice Hockey Event=Ice Hockey 1536 ==> Discipline=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+ 9. Sport=Ice Hockey Discipline=Ice Hockey 1536 ==> Event=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+10. Event=Ice Hockey 1536 ==> Sport=Ice Hockey Discipline=Ice Hockey 1536    <conf:(1)> lift:(3.76) lev:(0.2) [1127] conv:(1127.11)
+
